@@ -4,7 +4,7 @@ import { CRON_SCHEDULE } from './config/config.js';
 
 const scheduleJobs = () => {
 
-    // Run the initial job immediately
+    // Run the initial job immediately- optional I am running just to get the data immediately
     (async () => {
         console.log('Running initial job: Fetch Crypto Data');
         await fetchCryptoData();
