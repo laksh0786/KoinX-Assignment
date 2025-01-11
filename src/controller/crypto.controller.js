@@ -2,7 +2,7 @@ import axios from "axios";
 import { TryCatch } from "../utils/asyncCatch.js";
 import { ErrorHandler } from "../utils/ErrorHandler.js";
 import { COINGECKO_API_URL } from "../config/config.js";
-import Crypto from "../models/Crypto.js";
+import Crypto from "../models/crypto.js";
 
 const COINGECKO_API = COINGECKO_API_URL;
 
