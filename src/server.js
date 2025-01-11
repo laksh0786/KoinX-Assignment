@@ -4,6 +4,10 @@ import  {scheduleJobs} from './backgorundScheduler.js';
 import dotenv from "dotenv";
 import { errorMiddleware } from './middlewares/error.js';
 
+
+//import routes
+import cryptoRoutes from './routes/crypto.routes.js';
+
 // Load environment variables
 dotenv.config();
 
@@ -19,7 +23,13 @@ connectDB();
 app.use(express.json());
 
 
+//intitial route
+app.get("/", (req, res) => {
+    res.send("KoinX backend assignment is running...");
+});
 
+//mount the routes
+app.use(cryptoRoutes);
 
 
 // Error handling middleware

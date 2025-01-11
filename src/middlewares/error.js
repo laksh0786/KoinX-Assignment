@@ -1,5 +1,3 @@
-import { node_env } from "../app.js";
-
 const errorMiddleware = (err , req , resp , next)=>{
 
     err.message ||= "Internal Server Error";
