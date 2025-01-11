@@ -6,7 +6,7 @@ const scheduleJobs = () => {
 
     // Run the initial job immediately- optional I am running just to get the data immediately
     (async () => {
-        console.log('Running initial job: Fetch Crypto Data');
+        // console.log('Running initial job: Fetch Crypto Data');
         await fetchCryptoData();
     })();
 

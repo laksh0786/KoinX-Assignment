@@ -19,7 +19,7 @@ const fetchCryptoData = async () => {
 
     const data = response.data;
 
-    console.log('Fetched crypto data:', data);
+    // console.log('Fetched crypto data:', data);
 
     // Iterate over the fetched coins and create new documents for each
     for (const coin of COINS) {
@@ -35,7 +35,7 @@ const fetchCryptoData = async () => {
       await Crypto.create(cryptoRecord);
     }
 
-    console.log('Crypto data stored successfully.');
+    // console.log('Crypto data stored successfully.');
   } catch (error) {
     console.error('Error fetching crypto data:', error.message);
   }
