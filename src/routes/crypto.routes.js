@@ -6,12 +6,13 @@ const router = express.Router();
 
 
 //import the controller
-import { getCryptoData } from '../controller/crypto.controller.js';
+import { getCryptoData, getCryptoDeviation } from '../controller/crypto.controller.js';
 
 
 
 //create the routes
-router.get('/stats', getCryptoData)
+router.get('/stats', getCryptoData);
+router.get('/deviation', getCryptoDeviation);
 
 
 
