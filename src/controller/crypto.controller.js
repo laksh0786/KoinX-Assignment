@@ -75,7 +75,7 @@ const getCryptoDeviation = async (req, res) => {
     const standardDeviation = Math.sqrt(variance);
 
     res.status(200).json({
-        deviation: parseFloat(standardDeviation),
+        deviation: parseFloat(standardDeviation.toFixed(2)), // Round to 2 decimal places optionally - select the number of decimal places as required
     });
 };
 
